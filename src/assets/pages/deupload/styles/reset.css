@@ -1,0 +1,63 @@
+:root {
+  --black: #0b0d0e;
+  --white: #ffffff;
+  --bold-purple: #651fff;
+  --medium-purple: #8466ff;
+  --light-purple: #ececfe;
+  --bold-gray: #5c5f6e;
+  --medium-gray: #838696;
+  --light-gray-100: #c4c7cf;
+  --light-gray-50: #e2e4e9;
+}
+
+@font-face {
+  font-family: "sofia-pro";
+  src: url("../font/SofiaProRegular.ttf");
+}
+
+* {
+  min-width: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  font-family: sofia-pro;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

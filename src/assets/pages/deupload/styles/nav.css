@@ -1,0 +1,28 @@
+.navigation {
+  min-width: 100%;
+  height: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+}
+
+.navigation__left,
+.navigation__right {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.navigation__link a {
+  color: var(--bold-gray);
+}
