@@ -1,65 +1,129 @@
-.feature{
-    display: flex;
-    flex-direction: column;
-    gap: 5.2rem;
-    text-align: center;
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+  text-align: center;
 }
 
-.feature__texts{
-    display: flex;
-    flex-direction: column;
-    gap: .8rem
+.feature__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
-.feature__title{
-    font-size: 4.8rem;
+.feature__title {
+  font-size: 4.8rem;
 }
 
-.feature__paragraph{
-    font-size: 1.8rem;
-    width: 85rem;
-    margin: 0 auto;
-    color: var(--medium-gray);
+.feature__paragraph {
+  font-size: 1.8rem;
+  width: 85rem;
+  margin: 0 auto;
+  color: var(--medium-gray);
 }
 
-.feature__articles{
-    display: flex;
-    gap: 2.4rem;
-    justify-content: center;
+.feature__articles {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
 }
 
-.feature__card{
-    padding: 4.8rem;
-    border-radius: 2.4rem;
-    max-width: 35.6rem;
-    display: flex;
-    flex-direction: column;
-    text-align: start; 
-    background: var(--bold-purple);
+.feature__card {
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+  max-width: 35.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  background: var(--bold-purple);
 }
 
-.card__img{
-    width: 8rem;
-    margin-bottom: 3.2rem;
+.card__img {
+  width: 8rem;
+  margin-bottom: 3.2rem;
 }
 
-.card__title{
-    font-size: 2.8rem;
-    margin-bottom: .4rem;
-    color: var(--white);
+.card__title {
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+  color: var(--white);
+  letter-spacing: -1.12px;
 }
 
-.card__paragraph{
-    font-size: 1.6rem;
-    color: var(--light-gray-100);
+.card__paragraph {
+  font-size: 1.6rem;
+  color: var(--light-gray-100);
+  line-height: 24px;
+  letter-spacing: -0.32px;
 }
 
-.card__link{
-    margin-top: 2.8rem;
-    font-size: 1.6rem;
-    gap: .8rem;
-    height: 2.4rem;
-    display: inline-flex;
-    align-content: center;
-    color: var(--white);
+.card__link {
+  margin-top: 2.8rem;
+  font-size: 1.6rem;
+  gap: 0.8rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-content: center;
+  color: var(--white);
+}
+
+.lightweight {
+}
+
+.lightweight__title {
+  font-size: 5.6rem;
+  font-style: normal;
+  line-height: 6.4rem;
+  letter-spacing: -2.24px;
+}
+
+.lightweight__title span {
+  color: var(--bold-purple);
+}
+
+.lightweight__containers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-template-areas:
+    "sharing"
+    "collect"
+    "team";
+}
+
+.lightweight__article {
+  border-radius: 2.4rem;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.02);
+}
+
+.lightweight__article:nth-child(1) {
+  background: #fff7ed;
+  grid-area: sharing;
+}
+
+.lightweight__article:nth-child(2) {
+  background: #e0f7fa;
+  grid-area: collect;
+}
+
+.lightweight__article:nth-child(3) {
+  background: #ececfe;
+  grid-area: team;
+}
+
+.article__title {
+  color: var(--bold-purple);
+  font-size: 4.2rem;
+  line-height: 6.4rem;
+  letter-spacing: -2.1px;
+}
+
+.article__paragraph {
+  color: var(--light-gray-100);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.36px;
+}
+
+.article__illustration {
 }
