@@ -242,10 +242,9 @@
 .decentralized__moreBenefits-card {
   padding: 3.2rem 0;
   gap: 2.4rem;
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .moreBenefits__title {
@@ -260,4 +259,111 @@
   letter-spacing: -0.32px;
   max-width: 40.8rem;
   color: var(--medium-gray);
+}
+
+/* STARTED */
+.started {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.started__account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.started__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.started__title {
+  font-size: 3.2rem;
+  line-height: 32px;
+  letter-spacing: -1.28px;
+}
+
+.started__paragraph {
+  color: var(--medium-gray);
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+.started__information {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+}
+
+.started__userType {
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.started__userType:nth-child(1) {
+  flex: .5;
+  background: var(--bold-purple);
+  color: var(--white);
+}
+
+.started__userType:nth-child(2) {
+  flex: 1;
+  flex-direction: row;
+  background: var(--light-gray-50);
+  color: var(--bold-purple);
+  gap: 4.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userType__title {
+  font-size: 2.4rem;
+  line-height: 32px;
+  letter-spacing: -0.96px;
+}
+
+.userType__paragraph {
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+
+}
+
+.usertype__link {
+  height: 2.4rem;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  display: inline-flex;
+  align-content: center;
+}
+
+.started__userType:first-child .usertype__link {
+  color: var(--white);
+}
+
+
+.started__userType:last-child .usertype__link {
+  color: var(--bold-purple);
+}
+
+.userType__main{
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.usertype__illustration{
+  flex: 1;
 }
