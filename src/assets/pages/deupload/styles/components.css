@@ -28,3 +28,9 @@
     color: var(--white);
     font-weight: bold;
 }
+
+/* TEXTS */
+
+.span__purple{
+    color: var(--bold-purple);
+}
