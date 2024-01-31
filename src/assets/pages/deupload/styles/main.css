@@ -168,7 +168,7 @@
 }
 
 .decentralized__main {
-  flex: 0.6;
+  flex: 0.8;
   display: flex;
   flex-direction: column;
 }
@@ -191,6 +191,7 @@
 .decentralized__benefits {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 }
 
 .decentralized__benefits-card {
