@@ -13,6 +13,7 @@
     border: .2rem solid var(--black);
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: var(--black);
     font-weight: bold;
 }
@@ -24,6 +25,7 @@
     border-radius: 1.2rem;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--bold-purple);
     color: var(--white);
     font-weight: bold;
@@ -31,6 +33,6 @@
 
 /* TEXTS */
 
-.span__purple{
+.span-purple{
     color: var(--bold-purple);
 }
