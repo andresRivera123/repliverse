@@ -36,3 +36,12 @@
 .span-purple{
     color: var(--bold-purple);
 }
+
+@media (max-width:1280px){
+    .white-button{
+        height: 4rem;
+    }
+    .purple-button{
+        height: 4rem;
+    }
+}

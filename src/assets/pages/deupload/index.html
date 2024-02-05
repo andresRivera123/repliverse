@@ -13,13 +13,42 @@
   <body>
     <header>
       <nav class="navigation">
+        <svg
+          id="off-menu-mobile"
+          class="navigation__menuMobile"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
         <div class="navigation__left">
           <img
             class="navigation__logo"
             src="./img/logo-nav.svg"
             alt="Logo Deupload navbar"
           />
-          <ul class="navigation__list">
+          <ul id="menu" class="navigation__list">
+            <svg
+              class="close-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
             <li class="navigation__link"><a href="#">Features</a></li>
             <li class="navigation__link"><a href="#">Solutions</a></li>
             <li class="navigation__link"><a href="#">NFT</a></li>
@@ -394,7 +423,6 @@
               <a href="#" class="white-button">Comparision</a>
             </div>
           </div>
-
         </footer>
       </section>
       <!-- WORKS -->
@@ -611,5 +639,6 @@
         </section>
       </footer>
     </main>
+    <script src="logic/navbar.js"></script>
   </body>
 </html>
