@@ -15,19 +15,20 @@
 }
 
 .footer__article:nth-child(1) {
-  flex: 1.4;
+  flex: 1.8;
 }
 
 .footer__article {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  flex: 1;
 }
 
 .footer__bussiness {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -74,4 +75,33 @@
   display: flex;
   flex-direction: row;
   gap: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    gap: 3.6rem;
+  }
+
+  .footer__section {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .footer__article{
+    gap: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__social {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.6rem;
+  }
+
+  .social__links {
+    justify-content: center;
+  }
 }
