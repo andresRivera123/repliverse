@@ -281,7 +281,7 @@
 .started__text {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.6rem;
 }
 
 .started__title {
@@ -844,5 +844,21 @@
     margin: 0 auto;
     max-width: 8rem;
     display: block;
+  }
+
+  /* STARTED */
+  .started__account {
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .started__information {
+    flex-direction: column;
+  }
+
+  .started__userType:nth-child(2) {
+    flex-direction: column;
+    gap: 4.2rem;
   }
 }
