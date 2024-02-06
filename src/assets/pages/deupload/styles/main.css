@@ -682,9 +682,7 @@
     flex: 1;
     object-fit: contain;
   }
-}
 
-@media (max-width: 1280px) {
   .lightweight__article {
     align-items: center;
   }
@@ -707,6 +705,41 @@
     padding: 1.6rem;
     flex-direction: column;
     background: #ececfe;
+  }
+
+  /* DECENTRALIZED */
+  .decentralized {
+    flex-direction: column;
+    gap: 6.8rem;
+  }
+
+  .decentralized__main {
+    flex: 1;
+  }
+
+  .decentralized__title {
+    font-size: 4.4rem;
+  }
+
+  .decentralized__paragraph {
+    margin-bottom: 4rem;
+  }
+
+  .decentralized__moreBenefits {
+    flex: 1;
+    gap: 3.6rem;
+  }
+
+  .decentralized__moreBenefits-card {
+    padding: 0;
+    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .moreBenefits__title {
+    font-size: 2.4rem;
   }
 }
 
