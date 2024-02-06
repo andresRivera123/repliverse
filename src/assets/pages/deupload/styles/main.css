@@ -667,11 +667,6 @@
 
   .article__texts {
     flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
   }
 
   .article__title {
@@ -688,13 +683,11 @@
   }
 
   .lightweight__article:nth-child(1) {
-    background: #fff7ed;
     grid-column: 1/5;
     grid-row: 1;
   }
 
   .lightweight__article:nth-child(2) {
-    background: #e0f7fa;
     grid-column: 1/5;
     grid-row: 2;
   }
@@ -702,9 +695,7 @@
   .lightweight__article:nth-child(3) {
     grid-column: 1/5;
     grid-row: 3;
-    padding: 1.6rem;
     flex-direction: column;
-    background: #ececfe;
   }
 
   /* DECENTRALIZED */
@@ -731,16 +722,12 @@
   }
 
   .decentralized__moreBenefits-card {
-    padding: 0;
     gap: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
-
   .moreBenefits__title {
     font-size: 2.4rem;
   }
+
 }
 
 @media (max-width: 768px) {
