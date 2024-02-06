@@ -728,6 +728,86 @@
     font-size: 2.4rem;
   }
 
+  /* PRICING */
+
+  .pricing__title {
+    font-size: 5.6rem;
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .princing {
+    max-width: 90%;
+    margin: 9.6rem auto 17.2rem;
+    background: var(--white);
+    height: max-content;
+    gap: 4rem;
+    position: static;
+  }
+
+  .pricing__title {
+    color: var(--black);
+    margin-top: 0;
+  }
+
+  .pricing__paragraph {
+    color: var(--medium-gray);
+  }
+
+  .pricing__paymenthMethod {
+    bottom: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .paymentMethod__options {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  .paymenthMethod {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .paymenthMethod:nth-child(1) {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .paymenthMethod:nth-child(2) {
+    margin-top: 0;
+    border-radius: 2.4rem;
+  }
+
+  .paymentMethod__price {
+    gap: 2.4rem;
+  }
+
+  .paymentMethod__footer-paragraph{
+    font-size: 1.8rem;
+  }
+
+  .paymentMethod__bound {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .paymentMethod__footer-buttons {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
