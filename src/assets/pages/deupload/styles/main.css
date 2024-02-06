@@ -622,3 +622,39 @@
   letter-spacing: -0.32px;
   color: var(--medium-gray);
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+
+  /* HERO */
+  .hero__title{
+    font-size: 4.2rem;
+  }
+
+  /* FEATURE */
+
+  .feature{
+    gap: 4rem;
+  }
+
+  .feature__title {
+    font-size: 4.4rem;
+  }
+
+  .feature__paragraph {
+    max-width: 100%;
+  }
+
+  .feature__articles{
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .card__title{
+    font-size: 2.4rem;
+  }
+}
