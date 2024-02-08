@@ -17,7 +17,7 @@
   gap: 4rem;
 }
 
-.navigation__menuMobile {
+.navigation__iconMobile {
   width: 4rem;
   color: var(--black);
   display: none;
@@ -86,14 +86,13 @@
   .active-mobile-menu {
     padding: 3.6rem 0;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     gap: 2.4rem;
     flex-direction: column;
-
     text-align: center;
     justify-content: space-between;
     background-color: var(--bold-purple);
@@ -114,11 +113,11 @@
     color: var(--white);
   }
 
-  .navigation__menuMobile {
+  .navigation__iconMobile {
     display: block;
   }
 
-  .navigation__right .purple-button {
+  .navigation__right{
     display: none;
   }
 }
