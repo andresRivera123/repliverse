@@ -4,6 +4,11 @@
     --gray-light: #00000099;
     --black-text-hover: #0009;
     --black-hover: #191919;
+    --white: #fff;
+}
+
+.bodyLinkedin{
+    font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* HEADER */
@@ -90,9 +95,8 @@
     border-left: 1px solid rgb(140 140 140/.2);
 }
 
-.header__itemMenu::nth-child(8){
+.header__itemMenu:nth-child(8){
     width: 125px;
-    margin-top: 8px;
 }
 
 .header__textCarret{
@@ -117,6 +121,168 @@
 /* MAIN */
 .main{
     width: 100%;
-    height: 1500px;
+    height: 900px;
     background: #F4F2EE;
+}
+
+.main__layout{
+    max-width: 1128px;
+    height: 100%;
+    margin: 0 auto ;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+/* PROFILE CONTAINER */
+
+.profileResume{
+    width: 255px;
+    border-radius: 8px;
+    border: 1px solid rgb(140 140 140/.2);
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+    background: var(--white); 
+}
+
+.profileResume__link{
+    color: var(--black);
+}
+
+.profileResume__link:nth-child(2){
+    width: 72px;
+    height: 72px;
+    margin: -28px 0 0 16px;
+    display: flex;
+}
+
+.profileResume__img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.profileResume__cover{
+    background-image: url("../img/images/background-profile-image-small.jpg");
+    width: 255px;
+    height: 58px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profileResume_information{
+    padding: 0 16px;
+}
+
+.profileResume__userName{
+    font-size: 20px;
+    margin-top: 4px;
+    font-weight: 600;
+    color: rgb(0% 0% 0% / 0.9);
+
+}
+
+.profileResume__description{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.profileResume__ubication{
+    font-size: 12px;
+    margin-top: 4px;
+    color: var(--gray-light);
+}
+
+.profileResume__currentWork{
+    margin-top: 8px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profileResume__workLogo{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.profileResume__workName{
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.profileAditional{
+    width: 255px;
+    border-radius: 8px;
+    border: 1px solid rgb(140 140 140/.2);
+    padding: 16px;
+    margin-bottom: 8px;
+    background: var(--white); 
+    display: flex;
+    flex-direction: column;
+}
+
+.profileAditional__link{
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--black);
+}
+
+.profileAditional__link:hover{
+    text-decoration: underline;
+}
+
+.profileAditional__link:nth-child(1){
+    margin-bottom: 8px;
+}
+
+.profileAditional__number{
+    color: var(--blue-principal);
+}
+
+.profileAditional__widgets{
+    margin-top: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgb(140 140 140/.2);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profileAditional__linkWidget{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+}
+
+.profileAditional__linkWidget:hover{
+    text-decoration: underline;
+}
+
+.profileAditional__icon{
+    margin-right: 8px;
+}
+
+/* POST CONTAINER */
+.main__postContainer{
+    width: 555px;
+    background: lightgreen;
+}
+
+/* NEWS CONTAINER */
+.main__newsContainer{
+    width: 300px;
+    background: lightcoral;
 }

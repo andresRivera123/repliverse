@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+  <body class="bodyLinkedin">
     <header class="header">
       <nav class="header__nav">
         <a class="header__logoContainer">
@@ -83,10 +83,14 @@
           </li>
           <li class="header__itemMenu">
             <a class="header__linkMenu">
-              <img class="header__icon" src="./img/icons/profile-icon.png" alt="" />
+              <img
+                class="header__icon"
+                src="./img/icons/profile-icon.png"
+                alt="Profile image"
+              />
               <div class="header__textCarret">
                 <p class="header__textLink">Yo</p>
-                <img src="./img/icons/carret-bottom-icon.svg" alt="">
+                <img src="./img/icons/carret-bottom-icon.svg" alt="" />
               </div>
             </a>
           </li>
@@ -99,7 +103,7 @@
               />
               <div class="header__textCarret">
                 <p class="header__textLink">Para&nbsp;negocios</p>
-                <img src="./img/icons/carret-bottom-icon.svg" alt="">
+                <img src="./img/icons/carret-bottom-icon.svg" alt="" />
               </div>
             </a>
           </li>
@@ -110,7 +114,65 @@
       </nav>
     </header>
     <main class="main">
-
+      <section class="main__layout">
+        <div class="main__profileContainer">
+          <div class="profileResume">
+            <a
+              class="profileResume__link"
+              href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
+              ><div class="profileResume__cover"></div
+            ></a>
+            <a
+              class="profileResume__link"
+              href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
+            >
+              <img
+                class="profileResume__img"
+                src="img/icons/profile-icon.jpg"
+                alt="Profile image"
+            /></a>
+            <div class="profileResume_information">
+              <a class="profileResume__link" href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
+                ><h3 class="profileResume__userName">Andrés Rivera Valle</h3>
+                <p class="profileResume__description">
+                  💻| Frontend developer & UX/UI designer |
+                </p>
+                <p class="profileResume__ubication">
+                  Alcobendas, Comunidad de Madrid
+                </p></a
+              >
+              <a href="" class="profileResume__currentWork">
+                <img
+                class="profileResume__workLogo"
+                  src="img/icons/adraba-icon.jpeg"
+                  alt="Logo de Ádraba Servicios Marketing"
+                />
+                <span class="profileResume__workName">Ádraba</span>
+              </a>
+            </div>
+          </div>
+          <div class="profileAditional">
+            <a href="" class="profileAditional__link">Visualizaciones del perfil <span class="profileAditional__number">39</span></a>
+            <a href=""  class="profileAditional__link">Impresiones de la publicación<span class="profileAditional__number">24</span></a>
+            <div class="profileAditional__widgets">
+              <a href="" class="profileAditional__linkWidget">
+                <img src="./img/icons/saved-element-icon.svg" class="profileAditional__icon">
+                <span class="profileAditional__widgetName">Elementos guardados</span>
+              </a>
+              <a href="" class="profileAditional__linkWidget">
+                <img src="./img/icons/groups-icon.svg" class="profileAditional__icon">
+                <span class="profileAditional__widgetName">Grupos</span>
+              </a>
+              <a href="" class="profileAditional__linkWidget">
+                <img src="./img/icons/events-icon.svg" class="profileAditional__icon">
+                <span class="profileAditional__widgetName">Eventos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__postContainer"></div>
+        <div class="main__newsContainer"></div>
+      </section>
     </main>
   </body>
 </html>
