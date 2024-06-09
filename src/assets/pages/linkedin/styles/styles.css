@@ -7,6 +7,11 @@
     --white: #fff;
 }
 
+@font-face {
+    font-family: "myrian-semibold";
+    src: url("../font/myriad-pro/MYRIADPRO-SEMIBOLD.OTF");
+  }
+
 .bodyLinkedin{
     font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -140,7 +145,7 @@
 .profileResume{
     width: 255px;
     border-radius: 8px;
-    border: 1px solid rgb(140 140 140/.2);
+    border: 1px solid #DFDEDA;
     padding-bottom: 16px;
     margin-bottom: 8px;
     background: var(--white); 
@@ -185,7 +190,6 @@
     margin-top: 4px;
     font-weight: 600;
     color: rgb(0% 0% 0% / 0.9);
-
 }
 
 .profileResume__description{
@@ -221,7 +225,7 @@
 .profileAditional{
     width: 255px;
     border-radius: 8px;
-    border: 1px solid rgb(140 140 140/.2);
+    border: 1px solid #DFDEDA;
     padding: 16px;
     margin-bottom: 8px;
     background: var(--white); 
@@ -265,21 +269,103 @@
     color: var(--black);
     display: flex;
     flex-direction: row;
+    gap: 8px;
 }
 
 .profileAditional__linkWidget:hover{
     text-decoration: underline;
 }
 
-.profileAditional__icon{
-    margin-right: 8px;
-}
-
 /* POST CONTAINER */
 .main__postContainer{
     width: 555px;
-    background: lightgreen;
 }
+
+.entryPost{
+    border-radius: 8px;
+    border: 1px solid #DFDEDA;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--white);
+}
+
+.entryPost__principal{
+    margin: 12px 16px 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.entryPost__logoLink{
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.entrypost__logo{
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.entryPost__createButton{
+    width: 100%;
+    padding: 10px 8px 10px 16px;
+    font-size: 14px;
+    border-radius: 35px;
+    font-family: myrian-semibold;
+    border: 1px solid #B2B2B2;
+    background-color: var(--white);
+    text-align: start;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    transition: background-color 0.167s ease;
+}
+
+.entryPost__createButton:hover{
+    background: #F3F3F3;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.entryPost__createButton:active{
+    background: #E8E8E8;
+}
+
+.entryPost__ButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 4px;
+}
+
+.entryPost__Button{
+    height: 48px;
+    padding: 0 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: myrian-semibold;
+    color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.167s ease;
+}
+
+.entryPost__Button:hover {
+    background: #F3F3F3;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+.entryPost__Button:active{
+    background:  #E8E8E8;
+}
+
+
 
 /* NEWS CONTAINER */
 .main__newsContainer{
