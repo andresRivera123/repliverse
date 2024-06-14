@@ -90,7 +90,10 @@
               />
               <div class="header__textCarret">
                 <p class="header__textLink">Yo</p>
-                <img src="./img/icons/carret-bottom-icon.svg" alt="carret bottom icon" />
+                <img
+                  src="./img/icons/carret-bottom-icon.svg"
+                  alt="carret bottom icon"
+                />
               </div>
             </a>
           </li>
@@ -103,7 +106,10 @@
               />
               <div class="header__textCarret">
                 <p class="header__textLink">Para&nbsp;negocios</p>
-                <img src="./img/icons/carret-bottom-icon.svg" alt="carret bottom icon" />
+                <img
+                  src="./img/icons/carret-bottom-icon.svg"
+                  alt="carret bottom icon"
+                />
               </div>
             </a>
           </li>
@@ -224,9 +230,9 @@
           </div>
           <div class="feedView">
             <button class="feedView__button">
-              <hr class="feedView__separator"/>
+              <hr class="feedView__separator" />
               <div class="feedView__textContainer">
-                <P class="feedView__text">Seleccionar vista del feed:</P>
+                <p class="feedView__text">Seleccionar vista del feed:</p>
                 <span class="feedView__target">Primero lo más relevante</span>
                 <img
                   class="feedView__icon"
@@ -236,6 +242,41 @@
               </div>
             </button>
           </div>
+          <div class="postsContainer">
+            <div id="post-individual" class="post">
+              <header class="post__header">
+                <a href="#" class="post__linkAuthor">
+                  <img
+                    src="./img/icons/nielsen-norman-group-logo.jpeg"
+                    alt=""
+                    class="post__imgLogo"
+                    width="48"
+                  />
+                </a>
+                <div class="post__authorInformation">
+                  <a href="#" class="post__linkAuthor">
+                    <h3 class="post__userName">Nielsen Norman Group</h3>
+                    <span class="post__userFollowers"
+                      >308.242 seguidores<br
+                    /></span>
+                    <span class="post__time"
+                      >3 horas • &nbsp;<img
+                        src="./img/icons/world-icon.svg"
+                        alt="world icon"
+                        class="post__iconTime" /></span
+                  ></a>
+                </div>
+              </header>
+              <div class="post__descriptionContainer">
+                <p class="post__description">Ever wonder how companies keep their designs consistent? It’s all thanks to design systems and style guides... but what's the difference?</p>
+              </div>
+              <div class="post__principalImageContainer">
+                <img src="./img/images/post-1.png" alt="" class="post__principalImage">
+              </div>
+
+            </div>
+          </div>
+          <template id="postTemplate"> </template>
         </div>
         <div class="main__newsContainer"></div>
       </section>
