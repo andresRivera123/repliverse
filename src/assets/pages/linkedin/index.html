@@ -121,6 +121,7 @@
     </header>
     <main class="main">
       <section class="main__layout">
+        <!-- PROFILE -->
         <div class="main__profileContainer">
           <div class="profileResume">
             <a
@@ -197,6 +198,7 @@
             </div>
           </div>
         </div>
+        <!-- POST -->
         <div class="main__postContainer">
           <div class="entryPost">
             <div class="entryPost__principal">
@@ -242,23 +244,22 @@
               </div>
             </button>
           </div>
-          <div class="postsContainer">
+          <div id="postsContainer" class="postsContainer"></div>
+          <template id="postTemplate">
             <div id="post-individual" class="post">
               <header class="post__header">
                 <a href="#" class="post__linkAuthor">
                   <img
-                    src="./img/icons/nielsen-norman-group-logo.jpeg"
-                    alt=""
+                    src="logoImgURL"
+                    alt="logoAlt"
                     class="post__imgLogo"
                     width="48"
                   />
                 </a>
                 <div class="post__authorInformation">
                   <a href="#" class="post__linkAuthor">
-                    <h3 class="post__userName">Nielsen Norman Group</h3>
-                    <span class="post__userFollowers"
-                      >308.242 seguidores<br
-                    /></span>
+                    <h3 class="post__userName">userName</h3>
+                    <span class="post__userFollowers">userFollowers</span><br />
                     <span class="post__time"
                       >3 horas • &nbsp;<img
                         src="./img/icons/world-icon.svg"
@@ -268,18 +269,72 @@
                 </div>
               </header>
               <div class="post__descriptionContainer">
-                <p class="post__description">Ever wonder how companies keep their designs consistent? It’s all thanks to design systems and style guides... but what's the difference?</p>
+                <p class="post__description">
+                  Ever wonder how companies keep their designs consistent? It’s
+                  all thanks to design systems and style guides... but what's
+                  the difference?
+                </p>
               </div>
               <div class="post__principalImageContainer">
-                <img src="./img/images/post-1.png" alt="" class="post__principalImage">
+                <img
+                  src="./img/images/post-1.png"
+                  alt=""
+                  class="post__principalImage"
+                />
               </div>
-
+              <footer class="post__social">
+                <div class="post__buttonsContainer">
+                  <button class="post__button">
+                    <img
+                      class="post__buttonIcon"
+                      src="./img/icons/post-reaction-icon.svg"
+                      alt="Reaction post icon"
+                    /><span class="post__buttonText">Recomendar</span>
+                  </button>
+                  <button class="post__button">
+                    <img
+                      class="post__buttonIcon"
+                      src="./img/icons/post-comment-icon.svg"
+                      alt="Comment post icon"
+                    /><span class="post__buttonText">Comentar</span>
+                  </button>
+                  <button class="post__button">
+                    <img
+                      class="post__buttonIcon"
+                      src="./img/icons/post-share-icon.svg"
+                      alt="Share post icon"
+                    /><span class="post__buttonText">Compartir</span>
+                  </button>
+                  <button class="post__button">
+                    <img
+                      class="post__buttonIcon"
+                      src="./img/icons/post-send-icon.svg"
+                      alt="Send post icon"
+                    /><span class="post__buttonText">Enviar</span>
+                  </button>
+                </div>
+              </footer>
             </div>
-          </div>
-          <template id="postTemplate"> </template>
+          </template>
         </div>
-        <div class="main__newsContainer"></div>
+        <!-- NEWS -->
+        <div class="main__newsContainer">
+          <div class="news__titleInformation">
+            <span class="news__title">LinkedIn Noticias</span>
+            <img
+              src="./img/icons/information-icon.svg"
+              alt="Information icon"
+            />
+            <h3 class="news__highlightsTitle">Historias destacadas</h3>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <a href="/" class="news__itemLink"><div class=""></div></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <script src="./logic/app.js"></script>
   </body>
 </html>

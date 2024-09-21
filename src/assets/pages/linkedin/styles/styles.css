@@ -131,7 +131,7 @@
 /* MAIN */
 .main {
   width: 100%;
-  height: 900px;
+  height: 1800px;
   background: #f4f2ee;
 }
 
@@ -142,7 +142,7 @@
   padding-top: 24px;
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  justify-content: space-between;
 }
 
 /* PROFILE CONTAINER */
@@ -418,6 +418,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .post{
@@ -473,8 +474,48 @@
   font-weight: 400;
 }
 
+.post__social{
+  padding: 4px 16px;
+}
+
+.post__buttonsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.post__button{
+  border: 0;
+  padding: 10px 8px;
+  gap: 4px;
+  width: 100%;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--black);
+  background: #fff;
+  justify-content: center;
+}
+
+.post__button:hover{
+  background: #F3F3F3;
+}
+
+.post__buttonIcon{
+
+}
+
+.post__buttonText{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
 /* NEWS CONTAINER */
 .main__newsContainer {
   width: 300px;
-  background: lightcoral;
+  padding: 12px 0 16px;
+  border-radius: 8px;
+  border: 1px solid #dfdeda;
+  background: var(--white);
 }
