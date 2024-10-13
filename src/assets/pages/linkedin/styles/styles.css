@@ -22,10 +22,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body{
-  background: ;
-}
-
 /* HEADER */
 .header {
   width: 100%;
@@ -436,7 +432,6 @@ body{
 
 .post__header{
   padding: 12px 40px 0 16px;
-
   gap: 8px;
   display: flex;
   flex-direction: row;
