@@ -189,7 +189,7 @@
   padding: 0 16px;
 }
 
-.profileResume__userName {
+.profileResume__userName, .news__title {
   font-size: 20px;
   margin-top: 4px;
   font-weight: 600;
@@ -531,8 +531,77 @@
 /* NEWS CONTAINER */
 .main__newsContainer {
   width: 300px;
-  padding: 12px 0 16px ;
+  height: max-content;
+  padding: 12px 0 16px;
   border-radius: 8px;
   border: 1px solid #dfdeda;
   background: var(--white);
+}
+
+.news__titleInformation{
+  padding: 0 8px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news__highlightsTitle{
+  font-size: 16px;
+  padding: 8px 0 0 20px;
+  font-weight: 600;
+  color: var(--black-text-hover);
+}
+
+.news__list{
+  margin: 4px 0 0 0;
+  padding: 0;
+}
+
+
+.news__item:hover{
+  background: #EBEBEB;
+}
+
+.news__itemLink{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12px 0 20px;
+}
+
+.news__subtitle{
+  font-size: 14px;
+  padding: 4px 16px 0 0;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  color: var(--black);
+}
+
+.news__subtitleDetails{
+  font-size: 12px;
+  color: var(--black-text-hover);
+  padding-bottom: 8px;
+}
+
+.news__showButton{
+  font-size: 14px;
+  margin: 0 0 0 12px;
+  padding: 2px 8px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  color: #000000BF;
+  font-weight: 600;
+  background: #fff;
+}
+
+.news__showButton:hover{
+  background-color: #F3F3F3;
+  color: var(--black);
+}
+
+.news__arrowImage{
+  margin: -2px 0 0 4px;
 }
