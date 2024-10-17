@@ -1,0 +1,50 @@
+/* Screen < 1200 */
+@media (max-width: 1199px) {
+  /* MAIN */
+  .main__layout {
+    max-width: 960px;
+  }
+
+  /* POST CONTAINER */
+  .main__postContainer {
+    width: 387px;
+  }
+}
+
+/* Screen < 992 */
+@media (max-width: 991px) {
+  /* MAIN */
+  .main__layout {
+    max-width: 720px;
+  }
+
+  /* POST CONTAINER */
+  .main__postContainer {
+    width: 471px;
+  }
+
+  /* NEWS CONTAINER */
+  .main__newsContainer {
+    display: none;
+  }
+}
+
+/* Screen < 768 */
+@media (max-width: 767px) {
+
+    .header {display: none;}
+  /* MAIN */
+  .main__layout {
+    max-width: 576px;
+    justify-content: center;
+  }
+
+  .main__profileContainer {
+    display: none;
+  }
+
+  /* POST CONTAINER */
+  .main__postContainer {
+    width: 471px;
+  }
+}

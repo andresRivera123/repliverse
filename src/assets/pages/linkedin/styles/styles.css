@@ -146,8 +146,11 @@
 
 /* PROFILE CONTAINER */
 
+.main__profileContainer{
+  width: 225px;
+}
+
 .profileResume {
-  width: 255px;
   border-radius: 8px;
   border: 1px solid #dfdeda;
   padding-bottom: 16px;
@@ -176,7 +179,6 @@
 
 .profileResume__cover {
   background-image: url("../img/images/background-profile-image-small.jpg");
-  width: 255px;
   height: 58px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -227,7 +229,7 @@
 }
 
 .profileAditional {
-  width: 255px;
+
   border-radius: 8px;
   border: 1px solid #dfdeda;
   padding: 16px;
