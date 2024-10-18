@@ -13,8 +13,8 @@
 }
 
 @font-face {
-    font-family: "myrian-light";
-    src: url("../font/myriad-pro/MYRIADPRO-REGULAR.OTF");
+  font-family: "myrian-light";
+  src: url("../font/myriad-pro/MYRIADPRO-REGULAR.OTF");
 }
 
 * {
@@ -27,7 +27,7 @@
   width: 100%;
   height: 53px;
   padding: 0 24px;
-  border: 1px solid rgb(140 140 140/0.2);
+  border-bottom: 1px solid rgb(140 140 140/0.2);
 }
 
 .header__nav {
@@ -40,11 +40,12 @@
 }
 
 .header__logoContainer {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .header__searchContainer {
-  width: 280px;
+  flex: 1;
+  max-width: 280px;
   height: 34px;
   padding: 0 20px;
   gap: 8px;
@@ -67,9 +68,13 @@
 }
 
 .header__menu {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
   margin-left: auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .header__itemMenu {
@@ -83,8 +88,8 @@
   align-items: center;
 }
 
-.header__icon {
-  width: max-content;
+#navSearchItem {
+  display: none;
 }
 
 .header__textLink {
@@ -98,7 +103,7 @@
   height: 25px;
 }
 
-.header__itemMenu:nth-child(7) {
+.header__itemMenu:nth-child(8) {
   /* Border left bussiness */
   width: 120px;
   padding-left: 12px;
@@ -112,20 +117,6 @@
 .header__textCarret {
   display: flex;
   flex-direction: row;
-}
-
-.header__itemMenu:last-child .header__linkMenu {
-  width: 125px;
-  font-size: 12px;
-  line-height: 18px;
-  color: #915907;
-  text-decoration: underline;
-  text-align: center;
-  cursor: pointer;
-}
-
-.header__itemMenu:last-child .header__linkMenu:hover {
-  color: #5c3b09;
 }
 
 /* MAIN */
@@ -146,7 +137,7 @@
 
 /* PROFILE CONTAINER */
 
-.main__profileContainer{
+.main__profileContainer {
   width: 225px;
 }
 
@@ -191,7 +182,8 @@
   padding: 0 16px;
 }
 
-.profileResume__userName, .news__title {
+.profileResume__userName,
+.news__title {
   font-size: 20px;
   margin-top: 4px;
   font-weight: 600;
@@ -229,7 +221,6 @@
 }
 
 .profileAditional {
-
   border-radius: 8px;
   border: 1px solid #dfdeda;
   padding: 16px;
@@ -371,7 +362,7 @@
 }
 
 .feedView {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 .feedView__button {
@@ -385,20 +376,20 @@
   cursor: pointer;
 }
 
-.feedView__separator{
-    flex: 1;
-    display: block;
-    height: 1px;
-    margin: auto 0;
-    border-top: 1px solid #BEBDBA
+.feedView__separator {
+  flex: 1;
+  display: block;
+  height: 1px;
+  margin: auto 0;
+  border-top: 1px solid #bebdba;
 }
 
-.feedView__textContainer{
-    margin-left: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
+.feedView__textContainer {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
 }
 
 .feedView__text {
@@ -412,18 +403,18 @@
   color: rgba(0, 0, 0, 0.75);
 }
 
-.feedView__icon{
+.feedView__icon {
   fill: #000;
 }
 
-.postsContainer{
+.postsContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.post{
+.post {
   border-radius: 8px;
   border: 1px solid #dfdeda;
   display: flex;
@@ -432,78 +423,79 @@
   background: var(--white);
 }
 
-.post__header{
+.post__header {
   padding: 12px 40px 0 16px;
   gap: 8px;
   display: flex;
   flex-direction: row;
 }
 
-.post__logo{
+.post__logo {
   width: 48px;
 }
 
-.post__authorInformation{
+.post__authorInformation {
   padding: 2px;
 }
 
-.post__linkAuthor{
+.post__linkAuthor {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.post__imgLogo{
+.post__imgLogo {
   border-radius: 50%;
   background-size: cover;
   object-fit: cover;
   height: 48px;
 }
 
-.post__userName{
+.post__userName {
   font-size: 14px;
   color: var(--black);
   font-weight: 600;
 }
 
-.post__timeContainer{
+.post__timeContainer {
   display: flex;
 }
 
-.post__userFollowers, .post__time{
+.post__userFollowers,
+.post__time {
   font-size: 12px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.post__timeComplement{
+.post__timeComplement {
   display: flex;
   flex-direction: row;
   color: var(--black-text-hover);
 }
 
-.post__descriptionContainer{
+.post__descriptionContainer {
   padding: 0 16px;
 }
 
-.post__description{
+.post__description {
   font-size: 14px;
   line-height: 20px;
   color: var(--black);
   font-weight: 400;
 }
 
-.post__social{
+.post__social {
   padding: 4px 16px;
 }
 
-.post__buttonsContainer{
+.post__buttonsContainer {
   display: flex;
   flex-direction: row;
   gap: 4px;
 }
 
-.post__button{
+.post__button {
   border: 0;
   padding: 10px 8px;
   gap: 4px;
@@ -516,19 +508,17 @@
   justify-content: center;
 }
 
-.post__button:hover{
-  background: #F3F3F3;
+.post__button:hover {
+  background: #f3f3f3;
 }
 
-.post__buttonIcon{
-
+.post__buttonIcon {
 }
 
-.post__buttonText{
+.post__buttonText {
   font-size: 14px;
   font-weight: 500;
 }
-
 
 /* NEWS CONTAINER */
 .main__newsContainer {
@@ -540,38 +530,37 @@
   background: var(--white);
 }
 
-.news__titleInformation{
+.news__titleInformation {
   padding: 0 8px 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.news__highlightsTitle{
+.news__highlightsTitle {
   font-size: 16px;
   padding: 8px 0 0 20px;
   font-weight: 600;
   color: var(--black-text-hover);
 }
 
-.news__list{
+.news__list {
   margin: 4px 0 0 0;
   padding: 0;
 }
 
-
-.news__item:hover{
-  background: #EBEBEB;
+.news__item:hover {
+  background: #ebebeb;
 }
 
-.news__itemLink{
+.news__itemLink {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 12px 0 20px;
 }
 
-.news__subtitle{
+.news__subtitle {
   font-size: 14px;
   padding: 4px 16px 0 0;
   font-weight: 600;
@@ -581,29 +570,29 @@
   color: var(--black);
 }
 
-.news__subtitleDetails{
+.news__subtitleDetails {
   font-size: 12px;
   color: var(--black-text-hover);
   padding-bottom: 8px;
 }
 
-.news__showButton{
+.news__showButton {
   font-size: 14px;
   margin: 0 0 0 12px;
   padding: 2px 8px;
   border: 0;
   display: flex;
   align-items: center;
-  color: #000000BF;
+  color: #000000bf;
   font-weight: 600;
   background: #fff;
 }
 
-.news__showButton:hover{
-  background-color: #F3F3F3;
+.news__showButton:hover {
+  background-color: #f3f3f3;
   color: var(--black);
 }
 
-.news__arrowImage{
+.news__arrowImage {
   margin: -2px 0 0 4px;
 }

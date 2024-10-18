@@ -1,10 +1,17 @@
 import { POSTS } from "../data/post.js";
 
+const searchNavItem = document.getElementById("navSearchItem");
+const searchContainer = document.getElementById("searchContainer");
+
+var mediaQuery = window.matchMedia("(max-width: 600px)");
 const postsContainer = document.getElementById("postsContainer");
 console.log(postsContainer)
-const postTemplate = document.getElementById("postTemplate")
-const fragment = document.createDocumentFragment()
+const postTemplate = document.getElementById("postTemplate");
+const fragment = document.createDocumentFragment();
 
+
+
+/* Create post templates in front */
 const drawPost = () => {
     postsContainer.textContent = "";
     POSTS.forEach((post) =>{

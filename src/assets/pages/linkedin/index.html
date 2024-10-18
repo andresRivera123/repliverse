@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body class="bodyLinkedin">
     <header class="header">
@@ -21,9 +21,11 @@
             class="header_logo"
             src="./img/icons/linkedin-logo.svg"
             alt="Logo linkedin"
+            width="41"
+            height="41"
           />
         </a>
-        <div class="header__searchContainer">
+        <div id="searchContainer" class="header__searchContainer">
           <img
             class="header__icon"
             src="./img/icons/navigation-search-icon.svg"
@@ -32,6 +34,14 @@
           <input class="header__search" type="text" placeholder="Buscar" />
         </div>
         <ul class="header__menu">
+          <li id="navSearchItem" class="header__itemMenu">
+            <a class="header__linkMenu">
+              <svg class="header__icon-search" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="search-medium" aria-hidden="true" role="none" data-supported-dps="24x24" fill="#000000" fill-opacity="0.9" width="24"  height="24" >
+                <path d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z" fill-opacity="0.9"></path>
+              </svg>
+              <p class="header__textLink">Buscar</p>
+            </a>
+          </li>
           <li class="header__itemMenu">
             <a class="header__linkMenu">
               <img
@@ -88,6 +98,7 @@
                 class="header__icon"
                 src="./img/icons/profile-icon.png"
                 alt="Profile image"
+                width="24"
               />
               <div class="header__textCarret">
                 <p class="header__textLink">Yo</p>
@@ -113,9 +124,6 @@
                 />
               </div>
             </a>
-          </li>
-          <li class="header__itemMenu">
-            <a class="header__linkMenu"> Reactiva Premium con un -50 % </a>
           </li>
         </ul>
       </nav>
@@ -376,7 +384,11 @@
           </ul>
           <button class="news__showButton">
             Mostrar más
-            <img class="news__arrowImage" src="./img/icons/news-arrow-down-icon.svg" alt="Arrow down">
+            <img
+              class="news__arrowImage"
+              src="./img/icons/news-arrow-down-icon.svg"
+              alt="Arrow down"
+            />
           </button>
         </div>
       </section>

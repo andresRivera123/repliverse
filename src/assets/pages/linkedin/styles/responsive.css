@@ -11,6 +11,28 @@
   }
 }
 
+/* Screen 1024 */
+@media (max-width: 1024px) {
+  /* HEADER */
+  .header__searchContainer {
+    display: none;
+  }
+
+  .header__menu {
+    margin-left: 0;
+  }
+
+  #navSearchItem {
+    display: block;
+  }
+
+  .header__icon-search{
+    fill: #666666;
+  }
+
+
+}
+
 /* Screen < 992 */
 @media (max-width: 991px) {
   /* MAIN */
@@ -30,15 +52,22 @@
 }
 
 /* Screen < 768 */
-@media (max-width: 767px) {
+@media (max-width: 852px) {
+  /* HEADER */
+  .header__textLink {
+    display: none;
+  }
+}
 
-    .header {display: none;}
+/* Screen < 768 */
+@media (max-width: 767px) {
   /* MAIN */
   .main__layout {
     max-width: 576px;
     justify-content: center;
   }
 
+  /* PROFILE CONTAINER */
   .main__profileContainer {
     display: none;
   }
