@@ -26,11 +26,10 @@
     display: block;
   }
 
-  .header__icon-search{
+  .header__icon-search {
+    flex: 0 0 auto;
     fill: #666666;
   }
-
-
 }
 
 /* Screen < 992 */
@@ -57,10 +56,21 @@
   .header__textLink {
     display: none;
   }
+
+  .header__textCarret {
+    display: none;
+  }
 }
 
 /* Screen < 768 */
 @media (max-width: 767px) {
+  /* HEADER */
+  .header__itemMenu:nth-child(8) {
+    width: 80px;
+    padding-left: 0;
+    border-left: 0;
+  }
+
   /* MAIN */
   .main__layout {
     max-width: 576px;
@@ -75,5 +85,63 @@
   /* POST CONTAINER */
   .main__postContainer {
     width: 471px;
+  }
+}
+
+/* Screen < 576 */
+@media (max-width: 576px) {
+  /* HEADER */
+  .header {
+    padding: 8px 6px 8px 12px;
+  }
+
+  .header__nav {
+    align-items: start;
+  }
+
+  .header_logo {
+    display: none;
+  }
+
+  .itemMenu__profile-mobileTop {
+    margin: auto 0;
+    display: block;
+    padding-right: 8px;
+  }
+
+  #navSearchItem {
+    display: none;
+  }
+
+  .header__searchContainer {
+    display: flex;
+    height: 32px;
+    max-width: 100%;
+    padding: 0 20px 0 8px;
+  }
+
+  .header__search[type="text"] {
+    font-size: 16px;
+  }
+
+  .header__searchContainer .header__icon {
+    width: 20px;
+    fill: #666;
+  }
+
+  .header__menu {
+    margin: auto 0;
+  }
+
+  .header__itemMenu {
+    display: none;
+  }
+
+  .itemMenu__filter-mobileTop,
+  .itemMenu__message-mobileTop {
+    padding-left: 8px;
+    width: max-content;
+    display: block;
+    margin-left: auto;
   }
 }

@@ -25,21 +25,59 @@
             height="41"
           />
         </a>
-        <div id="searchContainer" class="header__searchContainer">
+        <a class="itemMenu__profile-mobileTop">
           <img
             class="header__icon"
-            src="./img/icons/navigation-search-icon.svg"
-            alt="magnifier icon"
+            src="./img/icons/profile-icon.png"
+            alt="Profile image"
+            width="26"
           />
+        </a>
+        <div id="searchContainer" class="header__searchContainer">
+          <svg
+            class="header__icon-search"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            id="search-small"
+            aria-hidden="true"
+            role="none"
+            data-supported-dps="16x16"
+            fill="#000000"
+            fill-opacity="0.9"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"
+              fill-opacity="0.9"
+            ></path>
+          </svg>
           <input class="header__search" type="text" placeholder="Buscar" />
         </div>
         <ul class="header__menu">
           <li id="navSearchItem" class="header__itemMenu">
             <a class="header__linkMenu">
-              <svg class="header__icon-search" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="search-medium" aria-hidden="true" role="none" data-supported-dps="24x24" fill="#000000" fill-opacity="0.9" width="24"  height="24" >
-                <path d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z" fill-opacity="0.9"></path>
+              <svg
+                class="header__icon-search"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                id="search-medium"
+                aria-hidden="true"
+                role="none"
+                data-supported-dps="24x24"
+                fill="#000000"
+                fill-opacity="0.9"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z"
+                  fill-opacity="0.9"
+                ></path>
               </svg>
-              <p class="header__textLink">Buscar</p>
+              <p class="header__textLink header__textLink-search">Buscar</p>
             </a>
           </li>
           <li class="header__itemMenu">
@@ -72,12 +110,21 @@
               <p class="header__textLink">Empleo</p>
             </a>
           </li>
-          <li class="header__itemMenu">
+          <li class="header__itemMenu itemMenu__filter-mobileTop">
+            <a class="header__linkMenu">
+              <img
+                class="header__icon"
+                src="./img/icons/navigation-filt-post-icon.svg"
+                alt="filter post icon"
+              />
+            </a>
+          </li>
+          <li class="header__itemMenu itemMenu__message-mobileTop">
             <a class="header__linkMenu">
               <img
                 class="header__icon"
                 src="./img/icons/navigation-message-icon.svg"
-                alt="letter icon"
+                alt="message icon"
               />
               <p class="header__textLink">Mensajes</p>
             </a>
