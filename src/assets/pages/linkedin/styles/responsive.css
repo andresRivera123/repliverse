@@ -45,7 +45,7 @@
   }
 
   /* NEWS CONTAINER */
-  .main__newsContainer {
+  .main__aside {
     display: none;
   }
 }
