@@ -1,15 +1,20 @@
 import { POSTS } from "../data/post.js";
 
-const searchNavItem = document.getElementById("navSearchItem");
-const searchContainer = document.getElementById("searchContainer");
+const iconActiveSidebar = document.getElementById("iconOpenSidebar");
+const sidebar = document.getElementById("sidebar");
 
-var mediaQuery = window.matchMedia("(max-width: 600px)");
 const postsContainer = document.getElementById("postsContainer");
 console.log(postsContainer)
 const postTemplate = document.getElementById("postTemplate");
 const fragment = document.createDocumentFragment();
 
 
+/* Events with click */
+document.addEventListener("click", (e) => {
+    if(e.target.id === "iconActiveSidebar"){
+        console.log("CLICK ICON")
+    }
+})
 
 /* Create post templates in front */
 const drawPost = () => {

@@ -142,6 +142,7 @@
           <li class="header__itemMenu">
             <a class="header__linkMenu">
               <img
+                id="iconOpenSidebar"
                 class="header__icon"
                 src="./img/icons/profile-icon.png"
                 alt="Profile image"
@@ -178,7 +179,7 @@
     <main class="main">
       <section class="main__layout">
         <!-- PROFILE -->
-        <div class="main__profileContainer">
+        <div id="sidebar" class="main__profileContainer">
           <div class="profileResume">
             <a
               class="profileResume__link"
@@ -253,6 +254,15 @@
               </a>
             </div>
           </div>
+          <div class="profileConfigure">
+            <a href="" class="profileConfigure__link">
+              <img
+                src="./img/icons/settings-icon.svg"
+                class="profileConfigure__icon"
+              />
+              <span class="profileConfigure__name">Configuración</span>
+            </a>
+          </div>
         </div>
         <!-- POST -->
         <div class="main__postContainer">
@@ -288,7 +298,6 @@
           </div>
           <div class="feedView">
             <button class="feedView__button">
-              <hr class="feedView__separator" />
               <div class="feedView__textContainer">
                 <p class="feedView__text">Seleccionar vista del feed:</p>
                 <span class="feedView__target">Primero lo más relevante</span>
