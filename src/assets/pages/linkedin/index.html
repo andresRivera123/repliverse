@@ -27,6 +27,7 @@
         </a>
         <a class="itemMenu__profile-mobileTop">
           <img
+            id="iconOpenSidebar"
             class="header__icon"
             src="./img/icons/profile-icon.png"
             alt="Profile image"
@@ -142,7 +143,6 @@
           <li class="header__itemMenu">
             <a class="header__linkMenu">
               <img
-                id="iconOpenSidebar"
                 class="header__icon"
                 src="./img/icons/profile-icon.png"
                 alt="Profile image"
@@ -179,91 +179,94 @@
     <main class="main">
       <section class="main__layout">
         <!-- PROFILE -->
-        <div id="sidebar" class="main__profileContainer">
-          <div class="profileResume">
-            <a
-              class="profileResume__link"
-              href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
-              ><div class="profileResume__cover"></div
-            ></a>
-            <a
-              class="profileResume__link"
-              href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
-            >
-              <img
-                class="profileResume__img"
-                src="img/icons/profile-icon.jpg"
-                alt="Profile image"
-            /></a>
-            <div class="profileResume_information">
+        <div id="overlay" class="overlay">
+          <div id="sidebar" class="main__profileContainer">
+            <div class="profileResume">
               <a
                 class="profileResume__link"
                 href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
-                ><h3 class="profileResume__userName">Andrés Rivera Valle</h3>
-                <p class="profileResume__description">
-                  💻| Frontend developer & UX/UI designer |
-                </p>
-                <p class="profileResume__ubication">
-                  Alcobendas, Comunidad de Madrid
-                </p></a
+                ><div class="profileResume__cover"></div
+              ></a>
+              <a
+                class="profileResume__link"
+                href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
               >
-              <a href="" class="profileResume__currentWork">
                 <img
-                  class="profileResume__workLogo"
-                  src="img/icons/adraba-icon.jpeg"
-                  alt="Logo de Ádraba Servicios Marketing"
-                />
-                <span class="profileResume__workName">Ádraba</span>
-              </a>
-            </div>
-          </div>
-          <div class="profileAditional">
-            <a href="" class="profileAditional__link"
-              >Visualizaciones del perfil
-              <span class="profileAditional__number">39</span></a
-            >
-            <a href="" class="profileAditional__link"
-              >Impresiones de la publicación<span
-                class="profileAditional__number"
-                >24</span
-              ></a
-            >
-            <div class="profileAditional__widgets">
-              <a href="" class="profileAditional__linkWidget">
-                <img
-                  src="./img/icons/saved-element-icon.svg"
-                  class="profileAditional__icon"
-                />
-                <span class="profileAditional__widgetName"
-                  >Elementos guardados</span
+                  class="profileResume__img"
+                  src="img/icons/profile-icon.jpg"
+                  alt="Profile image"
+              /></a>
+              <div class="profileResume_information">
+                <a
+                  class="profileResume__link"
+                  href="https://www.linkedin.com/in/carlos-andres-rivera-valle/"
+                  ><h3 class="profileResume__userName">Andrés Rivera Valle</h3>
+                  <p class="profileResume__description">
+                    💻| Frontend developer & UX/UI designer |
+                  </p>
+                  <p class="profileResume__ubication">
+                    Alcobendas, Comunidad de Madrid
+                  </p></a
                 >
-              </a>
-              <a href="" class="profileAditional__linkWidget">
+                <a href="" class="profileResume__currentWork">
+                  <img
+                    class="profileResume__workLogo"
+                    src="img/icons/adraba-icon.jpeg"
+                    alt="Logo de Ádraba Servicios Marketing"
+                  />
+                  <span class="profileResume__workName">Ádraba</span>
+                </a>
+              </div>
+            </div>
+            <div class="profileAditional">
+              <a href="" class="profileAditional__link"
+                >Visualizaciones del perfil
+                <span class="profileAditional__number">39</span></a
+              >
+              <a href="" class="profileAditional__link"
+                >Impresiones de la publicación<span
+                  class="profileAditional__number"
+                  >24</span
+                ></a
+              >
+              <div class="profileAditional__widgets">
+                <a href="" class="profileAditional__linkWidget">
+                  <img
+                    src="./img/icons/saved-element-icon.svg"
+                    class="profileAditional__icon"
+                  />
+                  <span class="profileAditional__widgetName"
+                    >Elementos guardados</span
+                  >
+                </a>
+                <a href="" class="profileAditional__linkWidget">
+                  <img
+                    src="./img/icons/groups-icon.svg"
+                    class="profileAditional__icon"
+                  />
+                  <span class="profileAditional__widgetName">Grupos</span>
+                </a>
+                <a href="" class="profileAditional__linkWidget">
+                  <img
+                    src="./img/icons/events-icon.svg"
+                    class="profileAditional__icon"
+                  />
+                  <span class="profileAditional__widgetName">Eventos</span>
+                </a>
+              </div>
+            </div>
+            <div class="profileConfigure">
+              <a href="" class="profileConfigure__link">
                 <img
-                  src="./img/icons/groups-icon.svg"
-                  class="profileAditional__icon"
+                  src="./img/icons/settings-icon.svg"
+                  class="profileConfigure__icon"
                 />
-                <span class="profileAditional__widgetName">Grupos</span>
-              </a>
-              <a href="" class="profileAditional__linkWidget">
-                <img
-                  src="./img/icons/events-icon.svg"
-                  class="profileAditional__icon"
-                />
-                <span class="profileAditional__widgetName">Eventos</span>
+                <span class="profileConfigure__name">Configuración</span>
               </a>
             </div>
-          </div>
-          <div class="profileConfigure">
-            <a href="" class="profileConfigure__link">
-              <img
-                src="./img/icons/settings-icon.svg"
-                class="profileConfigure__icon"
-              />
-              <span class="profileConfigure__name">Configuración</span>
-            </a>
           </div>
         </div>
+
         <!-- POST -->
         <div class="main__postContainer">
           <div class="entryPost">

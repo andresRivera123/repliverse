@@ -1,20 +1,34 @@
 import { POSTS } from "../data/post.js";
 
-const iconActiveSidebar = document.getElementById("iconOpenSidebar");
 const sidebar = document.getElementById("sidebar");
-
+const overlay = document.getElementById("overlay")
 const postsContainer = document.getElementById("postsContainer");
-console.log(postsContainer)
 const postTemplate = document.getElementById("postTemplate");
 const fragment = document.createDocumentFragment();
 
 
 /* Events with click */
 document.addEventListener("click", (e) => {
-    if(e.target.id === "iconActiveSidebar"){
-        console.log("CLICK ICON")
+    /* Open sidebar */
+    if(e.target.id === "iconOpenSidebar"){
+        showSidebar();
+    }else if (!sidebar.contains(e.target) && e.target.id !== "iconOpenSidebar" ){
+        hideSidebar();
     }
 })
+
+
+function showSidebar(){
+    sidebar.classList.add("visible");
+    overlay.classList.add("visible");
+    document.body.classList.add("no-scroll");
+}
+
+function hideSidebar(){
+    sidebar.classList.remove("visible");
+    overlay.classList.remove("visible");
+    document.body.classList.remove("no-scroll");
+}
 
 /* Create post templates in front */
 const drawPost = () => {
