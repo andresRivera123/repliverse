@@ -136,6 +136,13 @@
     padding: 0 16px 25px;
   }
 
+  .profileResume__description,
+  .profileResume__ubication,
+  .profileResume__workName,
+  .profileAditional__link {
+    font-size: 14px;
+  }
+
   .profileAditional {
     border-radius: 0;
     border: 0;
