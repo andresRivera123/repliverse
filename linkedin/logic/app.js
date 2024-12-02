@@ -17,7 +17,6 @@ document.addEventListener("click", (e) => {
     }
 })
 
-
 function showSidebar(){
     sidebar.classList.add("visible");
     overlay.classList.add("visible");
