@@ -179,84 +179,83 @@
     <main class="main">
       <section class="main__layout">
         <!-- PROFILE -->
-        <div id="overlay" class="overlay">
-          <div id="sidebar" class="main__profileContainer">
-            <div class="profileResume">
+        <div id="overlay" class="overlay"></div>
+        <div id="sidebar" class="main__profileContainer">
+          <div class="profileResume">
+            <a class="profileResume__link" href="#"
+              ><div class="profileResume__cover"></div
+            ></a>
+            <a class="profileResume__link" href="#">
+              <img
+                class="profileResume__img"
+                src="img/icons/profile-icon.jpg"
+                alt="Profile image"
+            /></a>
+            <div class="profileResume_information">
               <a class="profileResume__link" href="#"
-                ><div class="profileResume__cover"></div
-              ></a>
-              <a class="profileResume__link" href="#">
-                <img
-                  class="profileResume__img"
-                  src="img/icons/profile-icon.jpg"
-                  alt="Profile image"
-              /></a>
-              <div class="profileResume_information">
-                <a class="profileResume__link" href="#"
-                  ><h3 class="profileResume__userName">Andrés Rivera Valle</h3>
-                  <p class="profileResume__description">
-                    💻| Frontend developer & UX/UI designer |
-                  </p>
-                  <p class="profileResume__ubication">
-                    Alcobendas, Comunidad de Madrid
-                  </p></a
-                >
-                <a href="" class="profileResume__currentWork">
-                  <img
-                    class="profileResume__workLogo"
-                    src="img/icons/adraba-icon.jpeg"
-                    alt="Logo de Ádraba Servicios Marketing"
-                  />
-                  <span class="profileResume__workName">Ádraba</span>
-                </a>
-              </div>
-            </div>
-            <div class="profileAditional">
-              <a href="" class="profileAditional__link"
-                >Visualizaciones del perfil
-                <span class="profileAditional__number">39</span></a
+                ><h3 class="profileResume__userName">Andrés Rivera Valle</h3>
+                <p class="profileResume__description">
+                  💻| Frontend developer & UX/UI designer |
+                </p>
+                <p class="profileResume__ubication">
+                  Alcobendas, Comunidad de Madrid
+                </p></a
               >
-              <a href="" class="profileAditional__link"
-                >Impresiones de la publicación<span
-                  class="profileAditional__number"
-                  >24</span
-                ></a
-              >
-              <div class="profileAditional__widgets">
-                <a href="" class="profileAditional__linkWidget">
-                  <img
-                    src="./img/icons/saved-element-icon.svg"
-                    class="profileAditional__icon"
-                  />
-                  <span class="profileAditional__widgetName"
-                    >Elementos guardados</span
-                  >
-                </a>
-                <a href="" class="profileAditional__linkWidget">
-                  <img
-                    src="./img/icons/groups-icon.svg"
-                    class="profileAditional__icon"
-                  />
-                  <span class="profileAditional__widgetName">Grupos</span>
-                </a>
-                <a href="" class="profileAditional__linkWidget">
-                  <img
-                    src="./img/icons/events-icon.svg"
-                    class="profileAditional__icon"
-                  />
-                  <span class="profileAditional__widgetName">Eventos</span>
-                </a>
-              </div>
-            </div>
-            <div class="profileConfigure">
-              <a href="" class="profileConfigure__link">
+              <a href="" class="profileResume__currentWork">
                 <img
-                  src="./img/icons/settings-icon.svg"
-                  class="profileConfigure__icon"
+                  class="profileResume__workLogo"
+                  src="img/icons/adraba-icon.jpeg"
+                  alt="Logo de Ádraba Servicios Marketing"
                 />
-                <span class="profileConfigure__name">Configuración</span>
+                <span class="profileResume__workName">Ádraba</span>
               </a>
             </div>
+          </div>
+          <div class="profileAditional">
+            <a href="" class="profileAditional__link"
+              >Visualizaciones del perfil
+              <span class="profileAditional__number">39</span></a
+            >
+            <a href="" class="profileAditional__link"
+              >Impresiones de la publicación<span
+                class="profileAditional__number"
+                >24</span
+              ></a
+            >
+            <div class="profileAditional__widgets">
+              <a href="" class="profileAditional__linkWidget">
+                <img
+                  src="./img/icons/saved-element-icon.svg"
+                  class="profileAditional__icon"
+                />
+                <span class="profileAditional__widgetName"
+                  >Elementos guardados</span
+                >
+              </a>
+              <a href="" class="profileAditional__linkWidget">
+                <img
+                  src="./img/icons/groups-icon.svg"
+                  class="profileAditional__icon"
+                />
+                <span class="profileAditional__widgetName">Grupos</span>
+              </a>
+              <a href="" class="profileAditional__linkWidget">
+                <img
+                  src="./img/icons/events-icon.svg"
+                  class="profileAditional__icon"
+                />
+                <span class="profileAditional__widgetName">Eventos</span>
+              </a>
+            </div>
+          </div>
+          <div class="profileConfigure">
+            <a href="" class="profileConfigure__link">
+              <img
+                src="./img/icons/settings-icon.svg"
+                class="profileConfigure__icon"
+              />
+              <span class="profileConfigure__name">Configuración</span>
+            </a>
           </div>
         </div>
 
@@ -270,7 +269,9 @@
                   alt="profile icon"
                   class="entrypost__logo"
               /></a>
-              <button class="entryPost__createButton">Crear publicación</button>
+              <button id="buttonCreatePost" class="entryPost__createButton">
+                Crear publicación
+              </button>
             </div>
             <div class="entryPost__ButtonsContainer">
               <button class="entryPost__Button">
@@ -497,8 +498,8 @@
         </aside>
       </section>
     </main>
-    <div class="modalPost">
-      <div class="modalPost__background">
+    <div id="modalPost" class="modalPost">
+      <div id="modalPostContainer" class="modalPost__container">
         <header class="modalPost__header">
           <div class="modalPost__publicTarget">
             <img
@@ -518,7 +519,7 @@
               <span class="modalPost__subText">Publicar para Cualquiera</span>
             </div>
           </div>
-          <button class="modalPost__closeButton">
+          <button id="closePostModal" class="modalPost__closeButton">
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
               role="none"
@@ -559,7 +560,9 @@
           </button>
         </header>
         <main class="modalPost__main">
-          <div class="modalPost__content"></div>
+          <div class="modalPost__content">¿Sobre qué quieres hablar?</div>
+        </main>
+        <div class="modalPost__actions">
           <div class="modalPost__emoticonContainer">
             <button class="modalPost__emoticonButton">
               <svg
@@ -601,7 +604,6 @@
               </svg>
             </button>
           </div>
-
           <ul class="modalPost__carouselButtons">
             <button class="modalPost__imageButton">
               <svg
@@ -757,32 +759,45 @@
               </svg>
             </button>
           </ul>
-        </main>
-        <footer class="modalPost__footer">
-          <button class="modalPost__programButton">
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              role="none"
-              aria-hidden="true"
-              class="artdeco-button__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              data-supported-dps="24x24"
-              data-test-icon="clock-medium"
-            >
-              <defs>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  id="clock-medium"
-                  aria-hidden="true"
-                  role="none"
-                  data-supported-dps="24x24"
-                  fill="#000000"
-                  fill-opacity="0.9"
-                >
+          <footer class="modalPost__footer">
+            <button class="modalPost__programButton">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                role="none"
+                aria-hidden="true"
+                class="artdeco-button__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                data-supported-dps="24x24"
+                data-test-icon="clock-medium"
+              >
+                <defs>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    id="clock-medium"
+                    aria-hidden="true"
+                    role="none"
+                    data-supported-dps="24x24"
+                    fill="#000000"
+                    fill-opacity="0.9"
+                  >
+                    <g fill-opacity="0.9">
+                      <path
+                        d="M2 12A10 10 0 1012 2 10 10 0 002 12zm2 0a8 8 0 118 8 8 8 0 01-8-8z"
+                        fill-opacity="0.9"
+                      ></path>
+                      <path
+                        d="M15.1 12.63L13 11.42V7a1 1 0 00-2 0v5a1 1 0 00.51.85l2.59 1.52a1 1 0 101-1.74z"
+                        fill-opacity="0.9"
+                      ></path>
+                    </g>
+                  </svg>
+                </defs>
+                <!---->
+                <g>
                   <g fill-opacity="0.9">
                     <path
                       d="M2 12A10 10 0 1012 2 10 10 0 002 12zm2 0a8 8 0 118 8 8 8 0 01-8-8z"
@@ -793,28 +808,17 @@
                       fill-opacity="0.9"
                     ></path>
                   </g>
-                </svg>
-              </defs>
-              <!---->
-              <g>
-                <g fill-opacity="0.9">
-                  <path
-                    d="M2 12A10 10 0 1012 2 10 10 0 002 12zm2 0a8 8 0 118 8 8 8 0 01-8-8z"
-                    fill-opacity="0.9"
-                  ></path>
-                  <path
-                    d="M15.1 12.63L13 11.42V7a1 1 0 00-2 0v5a1 1 0 00.51.85l2.59 1.52a1 1 0 101-1.74z"
-                    fill-opacity="0.9"
-                  ></path>
                 </g>
-              </g>
-            </svg>
-          </button>
-          <button class="modalPost__publishButton">Publicar</button>
-        </footer>
+              </svg>
+            </button>
+            <button class="modalPost__publishButton">Publicar</button>
+          </footer>
+        </div>
       </div>
     </div>
 
-    <script type="module" src="./logic/app.js"></script>
+    <script type="module" src="./logic/drawPost.js"></script>
+
+    <script type="module" src="./logic/seeModal.js"></script>
   </body>
 </html>

@@ -149,6 +149,18 @@
   justify-content: space-between;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
 /* PROFILE CONTAINER */
 
 .main__profileContainer {
@@ -655,9 +667,10 @@
 .modalPost{
   width: 100%;
   height: 100dvh;
-  top: 32px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -667,8 +680,9 @@
   background: none;
 }
 
-.modalPost__background{
+.modalPost__container{
   width: 744px;
+  margin-top: 32px;
   background: var(--white);
   border-radius: 8px;
 }
@@ -701,7 +715,7 @@
 
 .modalPost__title{
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   display: flex;
   flex-direction: row;
 }
@@ -715,14 +729,17 @@
 }
 
 .modalPost__closeButton{
+  width: 40px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 12px;
 }
 
 .modalPost__content{
   padding: 12px 24px;
   height: 280px;
+  font-size: 20px;
+  color: #666666;
 }
 
 .modalPost__emoticonContainer{
