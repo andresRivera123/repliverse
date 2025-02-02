@@ -23,15 +23,18 @@
 }
 
 .no-scroll {
-  overflow: hidden; 
+  overflow: hidden;
   height: 100vh;
 }
 
 /* HEADER */
 .header {
+  position: fixed;
   width: 100%;
   height: 53px;
   padding: 0 24px;
+  top: 0;
+  background: var(--white);
   border-bottom: 1px solid rgb(140 140 140/0.2);
 }
 
@@ -133,8 +136,13 @@
   flex-direction: row;
 }
 
+.header__icon {
+  border-radius: 50%;
+}
+
 /* MAIN */
 .main {
+  margin-top: 53px;
   width: 100%;
   background: #f4f2ee;
 }
@@ -298,13 +306,14 @@
   text-decoration: underline;
 }
 
-.profileConfigure{
+.profileConfigure {
   display: none;
 }
 
 /* POST CONTAINER */
 .main__postContainer {
   width: 555px;
+  margin-bottom: 40px;
 }
 
 .entryPost {
@@ -448,12 +457,12 @@
   border: 1px solid #dfdeda;
   display: flex;
   flex-direction: column;
-  gap: 8px;
   background: var(--white);
 }
 
 .post__header {
   padding: 12px 40px 0 16px;
+  margin-bottom: 8px;
   gap: 8px;
   display: flex;
   flex-direction: row;
@@ -505,6 +514,7 @@
 
 .post__descriptionContainer {
   padding: 0 16px;
+  margin-bottom: 8px;
 }
 
 .post__description {
@@ -625,12 +635,14 @@
   margin: -2px 0 0 4px;
 }
 
-.aside__footer{
+.aside__footer {
   display: flex;
   flex-direction: column;
+  top: 60px;
+  position: sticky;
 }
 
-.footer__legalList{
+.footer__legalList {
   margin: 16px 24px;
   padding: 0;
   display: flex;
@@ -638,22 +650,22 @@
   justify-content: center;
 }
 
-.footer__item{
+.footer__item {
   margin: 4px 8px;
 }
 
-.footer__item-link{
+.footer__item-link {
   font-size: 12px;
   color: var(--gray-light);
   display: flex;
 }
 
-.footer__item-link:hover{
+.footer__item-link:hover {
   text-decoration: underline;
   color: var(--blue-principal);
 }
 
-.footer__copyright{
+.footer__copyright {
   font-size: 12px;
   gap: 4px;
   display: flex;
@@ -662,12 +674,12 @@
   color: var(--black);
 }
 
-
 /* MODAL */
-.modalPost{
+.modalPost {
   width: 100%;
   height: 100dvh;
   top: 0;
+
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   display: none;
@@ -675,19 +687,19 @@
   align-items: center;
 }
 
-.modalPost button{
+.modalPost button {
   border: unset;
   background: none;
 }
 
-.modalPost__container{
+.modalPost__container {
   width: 744px;
   margin-top: 32px;
   background: var(--white);
   border-radius: 8px;
 }
 
-.modalPost__header{
+.modalPost__header {
   position: relative;
   padding: 28px 12px 28px 36px;
   display: flex;
@@ -695,58 +707,58 @@
   justify-content: space-between;
 }
 
-.modalPost__publicTarget{
+.modalPost__publicTarget {
   display: flex;
   flex-direction: row;
 }
 
-.modalPost__logo{
+.modalPost__logo {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.modalPost__publicTarget-text{
+.modalPost__publicTarget-text {
   margin-left: 12px;
   display: flex;
   flex-direction: column;
 }
 
-.modalPost__title{
+.modalPost__title {
   font-size: 20px;
   font-weight: 500;
   display: flex;
   flex-direction: row;
 }
 
-.modalPost__subText{
+.modalPost__subText {
   font-size: 14px;
 }
 
-.modalPost__ArrowIcon{
+.modalPost__ArrowIcon {
   margin-left: 8px;
 }
 
-.modalPost__closeButton{
+.modalPost__closeButton {
   width: 40px;
   position: absolute;
   top: 20px;
   right: 12px;
 }
 
-.modalPost__content{
+.modalPost__content {
   padding: 12px 24px;
   height: 280px;
   font-size: 20px;
   color: #666666;
 }
 
-.modalPost__emoticonContainer{
+.modalPost__emoticonContainer {
   margin: 16px 28px;
 }
 
-.modalPost__carouselButtons{
+.modalPost__carouselButtons {
   margin: 16px 24px 24px 24px;
   padding: 0;
   display: flex;
@@ -754,16 +766,15 @@
   gap: 20px;
 }
 
-.modalPost__footer{
+.modalPost__footer {
   padding: 12px 24px 12px 16px;
   border-top: 1px solid rgb(140, 140, 140, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: end;
-
 }
 
-.modalPost__publishButton{
+.modalPost__publishButton {
   padding: 6px 16px;
   font-size: 16px;
   font-weight: bold;

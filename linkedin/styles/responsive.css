@@ -255,6 +255,7 @@
   .header__searchContainer .header__icon {
     width: 20px;
     fill: #666;
+
   }
 
   .header__menu {
@@ -284,6 +285,13 @@
 
   .postsContainer {
     padding-top: 12px;
+  }
+}
+
+/* Screen < 480 */
+@media (max-width: 480px) {
+  .post__buttonText{
+    display: none;
   }
 }
 
